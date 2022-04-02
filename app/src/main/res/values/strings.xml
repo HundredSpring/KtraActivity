@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KiemTra_Activity</string>
+
+    <string name="computationError">Error</string>
+</resources>
