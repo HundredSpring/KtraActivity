@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int REQUEST_CODE = 123;
+    int REQUEST_CODE = 999;
     private EditText Sotiengui;
     private EditText Laisuat;
     private EditText Kyhan;
