@@ -2,6 +2,7 @@ package com.android.kiemtra_activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -27,27 +28,23 @@ public class second extends AppCompatActivity {
         setDatabyBundle();
 
     }
-//    public void setDatabyExtras(){
-//        Intent intent = getIntent();
-//        String tienlai = intent.getStringExtra(MainActivity.TIENLAI);
-//        String tongtien = intent.getStringExtra(MainActivity.TONGTIEN);
-//
-//        Tienlai.setText(tienlai);
-//        Tongtien.setText(tongtien);
-//    }
+
     public void setDatabyBundle(){
         Intent intent = getIntent();
         Bundle bundle = intent.getBundleExtra(MainActivity.BUNDLE);
         String tienlai = bundle.getString(MainActivity.TIENLAI);
         String tongtien = bundle.getString(MainActivity.TONGTIEN);
 
-        Tienlai.setText(tienlai);
-        Tongtien.setText(tongtien);
+        Tienlai.setText(tienlai + " đ");
+        Tongtien.setText(tongtien +" đ");
     }
 
     public void back(View view){
-        Intent intent = new Intent(second.this,MainActivity.class);
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivity(intent);
+        setResult(RESULT_OK,intent);
+        finish();
+
     }
 
 }

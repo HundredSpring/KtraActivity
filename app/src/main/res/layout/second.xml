@@ -7,20 +7,6 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="55dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:text="đ"
-        android:textAlignment="textEnd"
-        android:textColor="@android:color/holo_blue_light"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tongtiennhanduoc" />
-
-    <TextView
         android:id="@+id/tongtiennhanduoc"
         android:layout_width="378dp"
         android:layout_height="43dp"
@@ -94,17 +80,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tongtiennhanduoc" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="55dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="8dp"
-        android:text="đ"
-        android:textAlignment="textEnd"
-        android:textColor="@android:color/holo_blue_light"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tienlai" />
 </androidx.constraintlayout.widget.ConstraintLayout>
